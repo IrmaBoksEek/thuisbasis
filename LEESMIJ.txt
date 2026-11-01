@@ -1,0 +1,10 @@
+THUISBASIS 2.4 - GITHUB PAGES
+
+Upload index.html, sw.js, manifest.webmanifest en icon.svg naar de hoofdmap van je GitHub Pages repository.
+
+Voeg bij Google Cloud > OAuth-client > Geautoriseerde JavaScript-bronnen toe:
+https://irmabokseek.github.io
+
+De lokale browseropslag blijft per browser/apparaat apart. Maak eerst een JSON-back-up en importeer die op een ander apparaat als nodig.
+
+Synchronisatie met Google Tasks is handmatig en vervangt geen centrale database. Test eerst met een paar taken.
