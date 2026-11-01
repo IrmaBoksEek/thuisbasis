@@ -1,11 +1,18 @@
-Thuisbasis 2.6 - installatie
+Thuisbasis 2.7 - TESTVERSIE
 
-1. Maak eerst via Thuisbasis een JSON-back-up van je taken.
-2. Upload index.html, sw.js, manifest.webmanifest en icon.svg naar dezelfde GitHub Pages-repository.
-3. Herlaad de website na publicatie.
-4. Ga naar Meer > Google Tasks, meld je aan, klik op Lijsten ophalen en koppel per categorie de gewenste lijst.
-5. Niet-gekoppelde Google Tasks-lijsten worden niet gelezen of gewijzigd.
+1. Maak eerst een JSON-back-up van de bestaande app.
+2. Upload index.html, sw.js, manifest.webmanifest en icon.svg naar GitHub Pages.
+3. Open de website en log in met je eigen Supabase e-mailadres en wachtwoord.
+4. Test met twee apparaten: maak een taak, klik 'Nu synchroniseren', controleer het tweede apparaat.
+5. Test ook offline: zet de internetverbinding tijdelijk uit, vink een taak af, zet internet weer aan en synchroniseer.
 
-Belangrijk: deze versie synchroniseert alleen Thuisbasis-taken met een herkenbare Thuisbasis-ID. Bestaande, andere taken in een gekoppelde lijst worden niet automatisch geimporteerd. Bij het omschakelen naar een andere lijst blijft een oude kopie in de vorige lijst staan, om onbedoeld gegevensverlies te voorkomen. Controleer dit handmatig.
-
-Deze versie is statisch gecontroleerd op JavaScript-syntax. Een volledige end-to-end-test met jullie Google-account is niet uitgevoerd.
+LET OP
+- Dit is een eerste technische testversie, geen productieklare offline-first oplossing.
+- Oude lokale testtaken worden bij de eerste aanmelding niet naar Supabase overgezet.
+- Gebruik voorlopig geen belangrijke of gevoelige gegevens.
+- Conflicten bij gelijktijdige wijzigingen zijn nog niet veilig opgelost (laatste upload kan winnen).
+- Automatisch verversen gebeurt iedere minuut als de app open is; niet als de app gesloten is.
+- Bij de eerste aanmelding is internet nodig; daarna zijn eerder lokaal geladen taken offline beschikbaar.
+- De sessie wordt lokaal bewaard in de browser. Gebruik uitsluitend eigen, beveiligde telefoons.
+- De Google Tasks-koppeling is behouden, maar de combinatie met cloudsync moet nog uitgebreid worden getest.
+- Test eerst met niet-gekoppelde Google Tasks-lijsten en controleer of bestaande Google Tasks-taken ongemoeid blijven.
