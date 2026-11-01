@@ -1,10 +1,11 @@
-THUISBASIS 2.4 - GITHUB PAGES
+Thuisbasis 2.6 - installatie
 
-Upload index.html, sw.js, manifest.webmanifest en icon.svg naar de hoofdmap van je GitHub Pages repository.
+1. Maak eerst via Thuisbasis een JSON-back-up van je taken.
+2. Upload index.html, sw.js, manifest.webmanifest en icon.svg naar dezelfde GitHub Pages-repository.
+3. Herlaad de website na publicatie.
+4. Ga naar Meer > Google Tasks, meld je aan, klik op Lijsten ophalen en koppel per categorie de gewenste lijst.
+5. Niet-gekoppelde Google Tasks-lijsten worden niet gelezen of gewijzigd.
 
-Voeg bij Google Cloud > OAuth-client > Geautoriseerde JavaScript-bronnen toe:
-https://irmabokseek.github.io
+Belangrijk: deze versie synchroniseert alleen Thuisbasis-taken met een herkenbare Thuisbasis-ID. Bestaande, andere taken in een gekoppelde lijst worden niet automatisch geimporteerd. Bij het omschakelen naar een andere lijst blijft een oude kopie in de vorige lijst staan, om onbedoeld gegevensverlies te voorkomen. Controleer dit handmatig.
 
-De lokale browseropslag blijft per browser/apparaat apart. Maak eerst een JSON-back-up en importeer die op een ander apparaat als nodig.
-
-Synchronisatie met Google Tasks is handmatig en vervangt geen centrale database. Test eerst met een paar taken.
+Deze versie is statisch gecontroleerd op JavaScript-syntax. Een volledige end-to-end-test met jullie Google-account is niet uitgevoerd.
