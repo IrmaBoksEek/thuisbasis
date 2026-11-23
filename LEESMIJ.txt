@@ -1,14 +1,10 @@
-Thuisbasis 2.7.2 - herinneringen sluiten
+Thuisbasis 2.7.3 - correctie meldingen
 
-Nieuw:
-- Elke in-app herinnering heeft een kruisje om haar afzonderlijk te sluiten.
-- Meldingsbalkjes verdwijnen automatisch na 10 seconden.
-- Gesloten herinneringen verschijnen niet opnieuw na synchronisatie op hetzelfde apparaat/account.
-- Het oude Irma/Tijmen-keuzeveld in de bovenbalk is verborgen.
+- Herinneringen direct sluiten met een klik; automatisch sluiten na 10 seconden.
+- Gesloten herinneringen worden lokaal onthouden.
+- Categorie Administratie verwijderd uit keuzelijsten (bestaande taken blijven behouden).
+- Overbodige headerinformatie verwijderd.
+- Thuisbasis-ID onderaan de Google Tasks-omschrijving voor nieuwe synchronisaties.
 
-Let op:
-- Dit is geen implementatie van pushmeldingen wanneer de app gesloten is.
-- Gesloten meldingen worden lokaal per ingelogd account bewaard, niet tussen apparaten gedeeld.
-- De bestaande synchronisatielogica is in deze versie niet inhoudelijk gewijzigd.
-
-Installatie: maak eerst een back-up en vervang de bestanden op GitHub Pages.
+Let op: echte pushmeldingen bij gesloten app zijn nog niet ingebouwd.
+Maak eerst een JSON-back-up. Vervang bestanden op GitHub Pages en vernieuw de pagina.
