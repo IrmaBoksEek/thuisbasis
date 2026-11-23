@@ -1,18 +1,9 @@
-Thuisbasis 2.7 - TESTVERSIE
+Thuisbasis 2.7.1 - testversie
 
-1. Maak eerst een JSON-back-up van de bestaande app.
-2. Upload index.html, sw.js, manifest.webmanifest en icon.svg naar GitHub Pages.
-3. Open de website en log in met je eigen Supabase e-mailadres en wachtwoord.
-4. Test met twee apparaten: maak een taak, klik 'Nu synchroniseren', controleer het tweede apparaat.
-5. Test ook offline: zet de internetverbinding tijdelijk uit, vink een taak af, zet internet weer aan en synchroniseer.
+Nieuw: inlogscherm als toegangspoort, lokale taken per account gescheiden, oude lokale testtaken niet meer ingeladen, 12 uur vooraf als herinneringsoptie, automatische Supabase-sync (60 seconden) en Google Tasks-sync zolang de app open is en de Google OAuth-sessie geldig is.
 
-LET OP
-- Dit is een eerste technische testversie, geen productieklare offline-first oplossing.
-- Oude lokale testtaken worden bij de eerste aanmelding niet naar Supabase overgezet.
-- Gebruik voorlopig geen belangrijke of gevoelige gegevens.
-- Conflicten bij gelijktijdige wijzigingen zijn nog niet veilig opgelost (laatste upload kan winnen).
-- Automatisch verversen gebeurt iedere minuut als de app open is; niet als de app gesloten is.
-- Bij de eerste aanmelding is internet nodig; daarna zijn eerder lokaal geladen taken offline beschikbaar.
-- De sessie wordt lokaal bewaard in de browser. Gebruik uitsluitend eigen, beveiligde telefoons.
-- De Google Tasks-koppeling is behouden, maar de combinatie met cloudsync moet nog uitgebreid worden getest.
-- Test eerst met niet-gekoppelde Google Tasks-lijsten en controleer of bestaande Google Tasks-taken ongemoeid blijven.
+LET OP: Pushmeldingen als de app gesloten is zijn nog NIET beschikbaar. Dit vereist een backend voor webpush en opslag van pushabonnementen. Test eerst met beide accounts en maak een back-up.
+
+De Google Tasks-API kan geen tijdstip aanmaken. Google Tasks-lijstkoppelingen blijven lokaal bewaard. Google OAuth moet na een verlopen token opnieuw verbonden worden.
+
+Upload de bestanden naar de hoofdmap van de GitHub Pages repository.
