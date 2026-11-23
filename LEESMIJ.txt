@@ -1,9 +1,14 @@
-Thuisbasis 2.7.1 - testversie
+Thuisbasis 2.7.2 - herinneringen sluiten
 
-Nieuw: inlogscherm als toegangspoort, lokale taken per account gescheiden, oude lokale testtaken niet meer ingeladen, 12 uur vooraf als herinneringsoptie, automatische Supabase-sync (60 seconden) en Google Tasks-sync zolang de app open is en de Google OAuth-sessie geldig is.
+Nieuw:
+- Elke in-app herinnering heeft een kruisje om haar afzonderlijk te sluiten.
+- Meldingsbalkjes verdwijnen automatisch na 10 seconden.
+- Gesloten herinneringen verschijnen niet opnieuw na synchronisatie op hetzelfde apparaat/account.
+- Het oude Irma/Tijmen-keuzeveld in de bovenbalk is verborgen.
 
-LET OP: Pushmeldingen als de app gesloten is zijn nog NIET beschikbaar. Dit vereist een backend voor webpush en opslag van pushabonnementen. Test eerst met beide accounts en maak een back-up.
+Let op:
+- Dit is geen implementatie van pushmeldingen wanneer de app gesloten is.
+- Gesloten meldingen worden lokaal per ingelogd account bewaard, niet tussen apparaten gedeeld.
+- De bestaande synchronisatielogica is in deze versie niet inhoudelijk gewijzigd.
 
-De Google Tasks-API kan geen tijdstip aanmaken. Google Tasks-lijstkoppelingen blijven lokaal bewaard. Google OAuth moet na een verlopen token opnieuw verbonden worden.
-
-Upload de bestanden naar de hoofdmap van de GitHub Pages repository.
+Installatie: maak eerst een back-up en vervang de bestanden op GitHub Pages.
